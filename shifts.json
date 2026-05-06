@@ -1,0 +1,39 @@
+{
+  "_comment": "Calipokehouse shift schedule. Times are 24-hour, Pacific Time. Each shift's 'message_key' references a message group in messages.json.",
+
+  "_schedule_summary": {
+    "monday_to_thursday": "Two separate streams per day. Shift 1: 1pm-11pm. Shift 2: 11pm-10am overnight.",
+    "thursday_evening_to_monday_morning": "Continuous stream. Shift 1: 1pm-12am. Shift 2: 12am-12pm Fri/Sat/Sun, 11:40pm-11am Sun-into-Mon.",
+    "encoding_note": "Overnight shifts are stored under the calendar day they START on. So 'Apollo & Ahnist's Thursday night shift' (which actually runs Fri 12am-12pm) is stored under 'friday'."
+  },
+
+  "monday": [
+    {"start": "13:00", "end": "23:00", "message_key": "shift1_weekday"},
+    {"start": "23:00", "end": "10:00", "message_key": "shift2_weekday"}
+  ],
+  "tuesday": [
+    {"start": "13:00", "end": "23:00", "message_key": "shift1_weekday"},
+    {"start": "23:00", "end": "10:00", "message_key": "shift2_weekday"}
+  ],
+  "wednesday": [
+    {"start": "13:00", "end": "23:00", "message_key": "shift1_weekday"},
+    {"start": "23:00", "end": "10:00", "message_key": "shift2_weekday"}
+  ],
+  "thursday": [
+    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekday"}
+  ],
+  "friday": [
+    {"start": "00:00", "end": "12:00", "message_key": "shift2_weekend_overnight"},
+    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekend"}
+  ],
+  "saturday": [
+    {"start": "00:00", "end": "12:00", "message_key": "shift2_weekend_overnight"},
+    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekend"}
+  ],
+  "sunday": [
+    {"start": "00:00", "end": "12:00", "message_key": "shift2_weekend_overnight"},
+    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekend"},
+    {"start": "23:40", "end": "11:00", "message_key": "shift2_sunday_night"}
+  ]
+}
+

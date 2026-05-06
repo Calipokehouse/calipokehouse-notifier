@@ -1,0 +1,38 @@
+{
+  "_comment": "Discord notification messages by shift group and day of week. Mimics the Pipeline Dream message style. Edit any message here to update what posts to Discord — no code changes needed.",
+
+  "shift1_weekday": {
+    "_streamers": "Austen & Aryton (Mon-Thurs day shift)",
+    "monday": "🎴 Austen & Aryton are LIVE on TikTok and the rips have BEGUN! 🔥\n⚡ Kick off your week right — From 12:00PM to 11:00PM PST, Calipokehouse is going CRAZY with the packs and you don't want to miss it!\n👀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "tuesday": "🃏 Austen & Aryton are back and LIVE on TikTok! 💥\n🎯 Tuesday's looking good — From 12:00PM to 11:00PM PST, the packs are flying and Calipokehouse is not slowing down!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "wednesday": "🔓 Austen & Aryton are LIVE on TikTok and the packs are OPEN! 🎉\n🌊 We're keeping the energy going — From 12:00PM to 11:00PM PST, Calipokehouse is ripping and you need to be here!\n🎮 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "thursday": "🏆 Austen & Aryton are LIVE on TikTok and going ALL night! 😤\n🔥 Don't sleep on this — From 12:00PM to 12:00AM PST, Calipokehouse is ripping deep into the night!\n⚡ Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
+  },
+
+  "shift2_weekday": {
+    "_streamers": "Shannon & Slick (Mon-Weds overnight)",
+    "monday": "🌙 The night shift is HERE — Shannon & Slick are LIVE on TikTok!\n💫 From 11:00PM to 10:00AM PST, Calipokehouse keeps it going while you sleep — stay up and catch the rips!\n🎴 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "tuesday": "🦉 Shannon & Slick have clocked in and are LIVE on TikTok!\n✨ The night crew is pulling up — From 11:00PM to 10:00AM PST, Calipokehouse never stops and neither do the packs!\n🃏 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "wednesday": "🌌 Shannon & Slick are LIVE and the night shift is in full effect on TikTok!\n💥 Late night rips hit different — From 11:00PM to 10:00AM PST, Calipokehouse is keeping the energy alive!\n🔥 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
+  },
+
+  "shift1_weekend": {
+    "_streamers": "Martin & Jack (Fri-Sun day shift, continuous stream)",
+    "friday": "✨ Martin & Jack are LIVE on TikTok and the weekend is STARTING! 🔥\n⚡ Friday is here — From 12:00PM to 12:00AM PST, Calipokehouse is keeping the energy going and you don't want to miss it!\n👀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "saturday": "🔥 Martin & Jack are LIVE on TikTok and the Saturday rips are HERE! 💥\n🎯 Weekend mode is ON — From 12:00PM to 12:00AM PST, Calipokehouse is going all day and you need to be here!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "sunday": "💫 Martin & Jack are LIVE on TikTok and the Sunday session is GOING! 🎉\n⭐ One more day of the weekend — From 12:00PM to 12:00AM PST, Calipokehouse is not slowing down!\n🎮 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
+  },
+
+  "shift2_weekend_overnight": {
+    "_streamers": "Apollo & Ahnist (Thu/Fri/Sat overnight, continuous stream)",
+    "_encoding_note": "Stored by calendar day the shift starts on (Fri 12am, Sat 12am, Sun 12am). 'friday' message = Thursday night carrying into Friday morning.",
+    "friday": "🌠 Apollo & Ahnist are LIVE and taking the reins on TikTok!\n🎯 The overnight crew is HERE — From 12:00AM to 12:00PM PST, Calipokehouse is ripping through the night and into the morning!\n💫 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "saturday": "🌙 Apollo & Ahnist are LIVE and the night shift has taken over on TikTok!\n💫 From 12:00AM to 12:00PM PST, Calipokehouse keeps the Friday night energy going — get in here!\n⭐ Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+    "sunday": "🌠 Apollo & Ahnist are LIVE and the Saturday night shift is HERE on TikTok!\n🎯 From 12:00AM to 12:00PM PST, Calipokehouse is ripping through the night and into the morning!\n💫 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
+  },
+
+  "shift2_sunday_night": {
+    "_streamers": "Shannon & Slick (Sunday overnight, continuous stream)",
+    "sunday": "🌌 Shannon & Slick are LIVE and closing out the weekend on TikTok!\n💥 From 11:40PM to 11:00AM PST, Calipokehouse is sending the weekend off right — get in here!\n🔥 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
+  }
+}

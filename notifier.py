@@ -266,19 +266,26 @@ def main() -> None:
     else:
         print(f"[info] is_live={is_live}  active_shift=None")
 
-    # Decision rule (single, simple):
+    # Decision rule (with two-tick confirmation):
     # Fire notification IFF:
     #   - Stream is currently live, AND
+    #   - Stream was also live on the PREVIOUS tick (guards against TikTok
+    #     transient/cached "live" indicators that can flicker even when the
+    #     stream isn't actually running yet), AND
     #   - There's a scheduled shift active right now, AND
     #   - This shift hasn't been announced yet today
+    was_live_previous = state.get("was_live", False)
     if is_live and active_shift:
-        if active_shift["shift_id"] not in state["announced_shift_ids"]:
+        if active_shift["shift_id"] in state["announced_shift_ids"]:
+            print(f"[info] Shift already announced today: {active_shift['shift_id']}")
+        elif not was_live_previous:
+            print("[info] First tick with is_live=True; waiting for next "
+                  "tick to confirm before announcing.")
+        else:
             message = get_message_for_shift(active_shift, messages)
             post_to_discord(message)
             state["announced_shift_ids"].append(active_shift["shift_id"])
             print(f"[info] Announced shift: {active_shift['shift_id']}")
-        else:
-            print(f"[info] Shift already announced today: {active_shift['shift_id']}")
     elif is_live and not active_shift:
         print("[warn] Stream is live but no shift is scheduled. "
               "Skipping notification.", file=sys.stderr)
@@ -291,3 +298,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+h

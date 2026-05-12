@@ -67,16 +67,20 @@ def is_tiktok_live(username: str) -> bool:
 
     body = resp.text
 
-    # Live signals (TikTok embeds JSON in the page)
+    # Live signals (TikTok embeds JSON in the page).
+    # NOTE: '"isLiveBroadcast":true' is NOT used here — TikTok's Schema.org
+    # structured data sets it whenever a live "room" exists, including when
+    # the streamer has only opened/scheduled the stream but hasn't started
+    # broadcasting yet. The actual broadcast state lives in liveRoomStatus
+    # (2 = live, 0 = preparing/not started, 4 = ended).
     live_signals = [
-        '"isLiveBroadcast":true',
-        '"liveRoomStatus":2',     # 2 = live in TikTok's enum
+        '"liveRoomStatus":2',     # 2 = actually broadcasting
         '"status":2,"liveTypeThirdParty"',
         '"isLive":true',
     ]
     offline_signals = [
+        '"liveRoomStatus":0',     # 0 = stream room opened but not broadcasting yet
         '"liveRoomStatus":4',     # 4 = ended
-        '"isLiveBroadcast":false',
         '"isLive":false',
     ]
 
@@ -298,4 +302,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-h

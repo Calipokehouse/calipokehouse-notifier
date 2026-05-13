@@ -68,20 +68,23 @@ def is_tiktok_live(username: str) -> bool:
     body = resp.text
 
     # Live signals (TikTok embeds JSON in the page).
-    # NOTE: '"isLiveBroadcast":true' is NOT used here — TikTok's Schema.org
-    # structured data sets it whenever a live "room" exists, including when
-    # the streamer has only opened/scheduled the stream but hasn't started
-    # broadcasting yet. The actual broadcast state lives in liveRoomStatus
-    # (2 = live, 0 = preparing/not started, 4 = ended).
+    #
+    # Empirical findings (May 2026 inspection of live vs non-live profile pages):
+    #   - '"isLiveBroadcast":true' and '"liveRoomStatus":0' appear in BOTH
+    #     live and not-live pages whenever a creator has ever opened a live
+    #     room. They are unreliable signals.
+    #   - The actual broadcast state lives in the JSON field '"status"':
+    #         2 = currently broadcasting
+    #         4 = ended
+    #     '"status":2' appears (twice) on a truly-live page in unambiguous
+    #     live-related JSON contexts (alongside roomId, liveRoom, startTime,
+    #     liveRoomStats, userCount, enterCount...). '"status":4' appears on a
+    #     not-live page. They are reliable signals.
     live_signals = [
-        '"liveRoomStatus":2',     # 2 = actually broadcasting
-        '"status":2,"liveTypeThirdParty"',
-        '"isLive":true',
+        '"status":2',
     ]
     offline_signals = [
-        '"liveRoomStatus":0',     # 0 = stream room opened but not broadcasting yet
-        '"liveRoomStatus":4',     # 4 = ended
-        '"isLive":false',
+        '"status":4',
     ]
 
     is_live = any(sig in body for sig in live_signals)

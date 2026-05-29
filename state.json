@@ -1,1 +1,20 @@
-{"was_live": true, "announced_shift_ids": ["friday-0-2026-05-22", "friday-1-2026-05-22", "saturday-0-2026-05-23", "saturday-1-2026-05-23", "sunday-0-2026-05-24", "sunday-1-2026-05-24", "sunday-2-2026-05-24", "tuesday-0-2026-05-26", "tuesday-1-2026-05-26", "wednesday-0-2026-05-27", "wednesday-1-2026-05-27", "thursday-0-2026-05-28", "friday-0-2026-05-29"], "last_check": "2026-05-29T13:20:16.636491-07:00"}
+{
+  "was_live": true,
+  "announced_shift_ids": [
+    "friday-0-2026-05-22",
+    "friday-1-2026-05-22",
+    "saturday-0-2026-05-23",
+    "saturday-1-2026-05-23",
+    "sunday-0-2026-05-24",
+    "sunday-1-2026-05-24",
+    "sunday-2-2026-05-24",
+    "tuesday-0-2026-05-26",
+    "tuesday-1-2026-05-26",
+    "wednesday-0-2026-05-27",
+    "wednesday-1-2026-05-27",
+    "thursday-0-2026-05-28",
+    "friday-0-2026-05-29",
+    "friday-1-2026-05-29"
+  ],
+  "last_check": "2026-05-29T13:26:57.224350-07:00"
+}

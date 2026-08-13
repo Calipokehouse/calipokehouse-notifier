@@ -1,38 +1,22 @@
 {
-  "_comment": "Discord notification messages by shift group and day of week. Mimics the Pipeline Dream message style. Edit any message here to update what posts to Discord — no code changes needed.",
+  "_comment": "Calipokehouse TikTok Discord notification messages. Each key is a message_key from shifts.json. Value is the exact Discord message. End times are intentionally omitted from all messages for streamer privacy/safety.",
 
-  "shift1_weekday": {
-    "_streamers": "Austen & Aryton (Mon-Thurs day shift)",
-    "monday": "🎴 Austen & Aryton are LIVE on TikTok and the rips have BEGUN! 🔥\n⚡ Kick off your week right — From 12:00PM to 11:00PM PST, Calipokehouse is going CRAZY with the packs and you don't want to miss it!\n👀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "tuesday": "🃏 Austen & Aryton are back and LIVE on TikTok! 💥\n🎯 Tuesday's looking good — From 12:00PM to 11:00PM PST, the packs are flying and Calipokehouse is not slowing down!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "wednesday": "🔓 Austen & Aryton are LIVE on TikTok and the packs are OPEN! 🎉\n🌊 We're keeping the energy going — From 12:00PM to 11:00PM PST, Calipokehouse is ripping and you need to be here!\n🎮 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "thursday": "🏆 Austen & Aryton are LIVE on TikTok and going ALL night! 😤\n🔥 Don't sleep on this — From 12:00PM to 12:00AM PST, Calipokehouse is ripping deep into the night!\n⚡ Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
-  },
+  "monday_shannon": "🌙 Shannon is LIVE and taking over the Sunday overnight on TikTok!\n💫 Starting at 12:00AM PST, Shannon is running the Calipokehouse late-night rips deep into the night!\n🎴 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+  "monday_austen": "🎴 Austen is LIVE on TikTok and the Monday rips have BEGUN! 🔥\n⚡ Kick off your week right — starting at 2:00PM PST, Calipokehouse is going CRAZY with the packs and you don't want to miss it!\n👀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
 
-  "shift2_weekday": {
-    "_streamers": "Shannon (Mon-Weds overnight)",
-    "monday": "🌙 The night shift is HERE — Shannon is LIVE on TikTok!\n💫 From 11:00PM to 10:00AM PST, Calipokehouse keeps it going while you sleep — stay up and catch the rips!\n🎴 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "tuesday": "🦉 Shannon has clocked in and is LIVE on TikTok!\n✨ The night crew is pulling up — From 11:00PM to 10:00AM PST, Calipokehouse never stops and neither do the packs!\n🃏 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "wednesday": "🌌 Shannon is LIVE and the night shift is in full effect on TikTok!\n💥 Late night rips hit different — From 11:00PM to 10:00AM PST, Calipokehouse is keeping the energy alive!\n🔥 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
-  },
+  "tuesday_shannon": "🦉 Shannon is LIVE and holding down the Monday overnight on TikTok!\n✨ Starting at 12:00AM PST, Shannon is keeping the Calipokehouse rips going through the night!\n🎴 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+  "tuesday_austen": "🃏 Austen is back and LIVE on TikTok! 💥\n🎯 Tuesday's looking good — starting at 2:00PM PST, the packs are flying and Calipokehouse is not slowing down!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
 
-  "shift1_weekend": {
-    "_streamers": "Joey & Aryton (Fri-Sun day shift, continuous stream)",
-    "friday": "✨ Joey & Aryton are LIVE on TikTok and the weekend is STARTING! 🔥\n⚡ Friday is here — From 12:00PM to 12:00AM PST, Calipokehouse is keeping the energy going and you don't want to miss it!\n👀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "saturday": "🔥 Joey & Aryton are LIVE on TikTok and the Saturday rips are HERE! 💥\n🎯 Weekend mode is ON — From 12:00PM to 12:00AM PST, Calipokehouse is going all day and you need to be here!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "sunday": "💫 Joey & Aryton are LIVE on TikTok and the Sunday session is GOING! 🎉\n⭐ One more day of the weekend — From 12:00PM to 12:00AM PST, Calipokehouse is not slowing down!\n🎮 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
-  },
+  "wednesday_shannon": "🌌 Shannon is LIVE and the Tuesday overnight is in FULL EFFECT on TikTok!\n💥 Starting at 12:00AM PST, Shannon is keeping the Calipokehouse late-night rips alive!\n🎴 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+  "wednesday_austen": "🔓 Austen is LIVE on TikTok and the packs are OPEN! 🎉\n🌊 We're keeping the energy going — starting at 2:00PM PST, Calipokehouse is ripping and you need to be here!\n🎮 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
 
-  "shift2_weekend_overnight": {
-    "_streamers": "Apollo & Ahnist (Thu/Fri/Sat overnight, continuous stream)",
-    "_encoding_note": "Stored by calendar day the shift starts on (Fri 12am, Sat 12am, Sun 12am). 'friday' message = Thursday night carrying into Friday morning.",
-    "friday": "🌠 Apollo & Ahnist are LIVE and taking the reins on TikTok!\n🎯 The overnight crew is HERE — From 12:00AM to 12:00PM PST, Calipokehouse is ripping through the night and into the morning!\n💫 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "saturday": "🌙 Apollo & Ahnist are LIVE and the night shift has taken over on TikTok!\n💫 From 12:00AM to 12:00PM PST, Calipokehouse keeps the Friday night energy going — get in here!\n⭐ Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
-    "sunday": "🌠 Apollo & Ahnist are LIVE and the Saturday night shift is HERE on TikTok!\n🎯 From 12:00AM to 12:00PM PST, Calipokehouse is ripping through the night and into the morning!\n💫 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
-  },
+  "thursday_shannon": "🌠 Shannon is LIVE and running the Wednesday overnight on TikTok!\n💫 Starting at 12:00AM PST, Shannon is holding it down for the late-night Calipokehouse rips!\n🎴 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+  "thursday_austen": "🏆 Austen is LIVE on TikTok and Thursday is HITTING! 😤\n🔥 Don't sleep on this — starting at 2:00PM PST, Calipokehouse is ripping and heading toward the weekend!\n⚡ Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+  "thursday_aryton": "🌟 Aryton has joined Austen on TikTok — the Calipokehouse duo is IN! 🔥\n🎯 The crew just doubled up — starting at 5:00PM PST, Aryton is jumping in to keep the packs flying!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
 
-  "shift2_sunday_night": {
-    "_streamers": "Shannon (Sunday overnight, continuous stream)",
-    "sunday": "🌌 Shannon is LIVE and closing out the weekend on TikTok!\n💥 From 11:40PM to 11:00AM PST, Calipokehouse is sending the weekend off right — get in here!\n🔥 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
-  }
+  "friday_duo": "✨ Joey & Aryton are LIVE — weekend RIPS are HERE! 🔥\n⚡ Friday is here — starting at 3:00PM PST, Calipokehouse is opening packs and pulling hits all afternoon!\n👀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+
+  "saturday_duo": "🔥 Joey & Aryton are LIVE — Saturday rips are LOCKED IN! 💥\n🎯 Weekend mode is ON — starting at 3:00PM PST, Calipokehouse is tearing through packs all day long!\n🚀 Watch LIVE: https://www.tiktok.com/@calipokehouse/live",
+
+  "sunday_duo": "💫 Joey & Aryton are LIVE and the Sunday rips are ROLLING! 🎉\n⭐ One more day of weekend hits — starting at 3:00PM PST, Calipokehouse is ripping packs and pulling nonstop!\n🎮 Watch LIVE: https://www.tiktok.com/@calipokehouse/live"
 }

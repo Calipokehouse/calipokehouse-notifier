@@ -1,39 +1,30 @@
 {
-  "_comment": "Calipokehouse shift schedule. Times are 24-hour, Pacific Time. Each shift's 'message_key' references a message group in messages.json.",
-
-  "_schedule_summary": {
-    "monday_to_thursday": "Two separate streams per day. Shift 1: 1pm-11pm. Shift 2: 11pm-10am overnight.",
-    "thursday_evening_to_monday_morning": "Continuous stream. Shift 1: 1pm-12am. Shift 2: 12am-12pm Fri/Sat/Sun, 11:40pm-11am Sun-into-Mon.",
-    "encoding_note": "Overnight shifts are stored under the calendar day they START on. So 'Apollo & Ahnist's Thursday night shift' (which actually runs Fri 12am-12pm) is stored under 'friday'."
-  },
+  "_comment": "Calipokehouse TikTok shift schedule. Times are 24-hour, Pacific Time. Each day is an array of shifts (in the order they start). When multiple shifts are simultaneously active, the notifier fires the most-recently-started shift that hasn't been announced yet today — this is how we get one notification per streamer as they join throughout the day. End times are internal windows only (never shown in Discord messages for streamer privacy). Overnight shifts that begin at 00:00 are stored under the calendar day they begin on.",
 
   "monday": [
-    {"start": "13:00", "end": "23:00", "message_key": "shift1_weekday"},
-    {"start": "23:00", "end": "10:00", "message_key": "shift2_weekday"}
+    {"start": "00:00", "end": "10:00", "message_key": "monday_shannon"},
+    {"start": "14:00", "end": "00:00", "message_key": "monday_austen"}
   ],
   "tuesday": [
-    {"start": "13:00", "end": "23:00", "message_key": "shift1_weekday"},
-    {"start": "23:00", "end": "10:00", "message_key": "shift2_weekday"}
+    {"start": "00:00", "end": "10:00", "message_key": "tuesday_shannon"},
+    {"start": "14:00", "end": "00:00", "message_key": "tuesday_austen"}
   ],
   "wednesday": [
-    {"start": "13:00", "end": "23:00", "message_key": "shift1_weekday"},
-    {"start": "23:00", "end": "10:00", "message_key": "shift2_weekday"}
+    {"start": "00:00", "end": "10:00", "message_key": "wednesday_shannon"},
+    {"start": "14:00", "end": "00:00", "message_key": "wednesday_austen"}
   ],
   "thursday": [
-    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekday"}
+    {"start": "00:00", "end": "10:00", "message_key": "thursday_shannon"},
+    {"start": "14:00", "end": "00:00", "message_key": "thursday_austen"},
+    {"start": "17:00", "end": "23:00", "message_key": "thursday_aryton"}
   ],
   "friday": [
-    {"start": "00:00", "end": "12:00", "message_key": "shift2_weekend_overnight"},
-    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekend"}
+    {"start": "15:00", "end": "00:00", "message_key": "friday_duo"}
   ],
   "saturday": [
-    {"start": "00:00", "end": "12:00", "message_key": "shift2_weekend_overnight"},
-    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekend"}
+    {"start": "15:00", "end": "00:00", "message_key": "saturday_duo"}
   ],
   "sunday": [
-    {"start": "00:00", "end": "12:00", "message_key": "shift2_weekend_overnight"},
-    {"start": "13:00", "end": "00:00", "message_key": "shift1_weekend"},
-    {"start": "23:40", "end": "11:00", "message_key": "shift2_sunday_night"}
+    {"start": "15:00", "end": "00:00", "message_key": "sunday_duo"}
   ]
 }
-
